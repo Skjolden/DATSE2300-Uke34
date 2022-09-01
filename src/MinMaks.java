@@ -70,7 +70,9 @@ public class MinMaks {
 
     public static void main(String[] args) {
         int[] liste = {8, 4, 17, 10, 6, 20, 1, 11, 15, 3, 18, 9, 2, 7, 19};
-        int[] minMaksListe = {3, 1};
+        int[] minMaksListe = {2, 3};
+        int[] minMaksListeIndeks = minMaks(minMaksListe);
+        int fakultet = 5;
 
         System.out.println("Indeksen til det forrste storste tallet er: " + maksIndeks(liste));
         System.out.println("Verdien til det storste tallet er: " + maksVerdi(liste));
@@ -78,9 +80,11 @@ public class MinMaks {
         System.out.println("Indeksen til det forste minste tallet er: " + minIndeks(liste));
         System.out.println("Verdien til det minste tallet er: " + minVerdi(liste));
 
-        System.out.println(fak(1));
+        System.out.println("Minste tallet er i indeks: " + minMaksListeIndeks[0] +
+                " Storste tallet er i indeks: " + minMaksListeIndeks[1]);
+
+        System.out.println("Fakulteten av " + fakultet + "! er: " + fak(fakultet));
 
     }
-
 
 }
